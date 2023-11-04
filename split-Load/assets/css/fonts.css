@@ -1,0 +1,28 @@
+
+/* Roboto */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'SansationTitle';
+  font-style: normal;
+  src: url(../fonts/sansation_title.ttf);
+}
+
+/* Open Sans */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  src: url(../fonts/OpenSans-Regular.ttf);
+ }

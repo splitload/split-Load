@@ -1,0 +1,374 @@
+/* ==========================================================================
+   Main
+   ========================================================================== */
+body{
+	background-color: #F4F8FA;
+	font-family: Roboto;
+	margin: 0;
+}
+   
+   .nav{
+	   top: 0;
+	   position: fixed;
+	background: #2E3339;
+	border: 1px solid #4582ec;
+	border-width: 2px 0 0 0;
+	margin: 0;
+	padding: 25px 30px;
+	font-family: Roboto; 
+	font-weight: 300;
+	position: fixed;
+	z-index: 10;
+	right: 0;
+	left: 0;
+}
+
+.title{
+	font-size: 30px;
+	color: #fff;
+}
+
+.caption{
+	color: #8C8C8C;
+	font-size: 20px;
+}
+
+.logout{
+	
+	float: right;
+	background-color: #d83636;
+	border: 0;
+	height: 37px;
+	text-align: center;
+	line-height: 37px;
+	padding: 0 30px;
+	color: #fff;
+	cursor: pointer;
+	
+}
+
+#panel-body{
+	width: 800px;
+	left: 50%;
+	top: 100px;
+	margin: 0 0 0 -400px;
+	position: absolute;
+	font-weight: 300;
+	padding-bottom: 50px;
+}
+
+@media screen and (max-width: 805px) {
+	
+	#panel-body{
+	width: 98%;
+	left: 0;
+	margin: 0;
+	position: absolute;
+	padding: 0 7.5px;
+}
+
+}
+
+/* ==========================================================================
+   Boxes
+   ========================================================================== */
+   
+.content-box{
+	background: #FFFFFF;
+	-moz-box-shadow: 1px 1px 1px 1px #ccc;
+  -webkit-box-shadow: 1px 1px 1px 1px #ccc;
+  box-shadow: 1px 1px 1px 1px #ccc;
+  margin: 0 0 50px 0;
+}
+
+.content-box-header{
+	background: #323a45;
+	color: #fff;
+	font-size: 25px;
+	padding: 15px 15px;
+	border: 1px #ccc solid;
+	border-width: 0 0 1px 0;
+	font-family: Roboto;
+	font-weight: 300,
+}
+
+.content-box-body{
+	
+	padding:  0px 8px 8px 8px;
+	
+}
+   
+#login-box{
+	position: absolute;
+	width: 400px;
+	left: 50%;
+	margin: 0 0 0 -200px;
+	top: 20%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: #efefef;
+	overflow: hidden;
+	z-index: 2;
+}
+
+
+#help-box{
+	position: absolute;
+	width: 390px;
+	text-align: center;
+	left: 50%;
+	margin: 0 0 0 -200px;
+	top: 20%;
+	padding: 5px;
+	font-weight: 300;
+	height: 65px;
+	background-color: #efefef;
+}
+
+
+
+#staff-conf-box{
+	width: 31%;
+	display: inline-block;
+	height: 300px;
+	padding: 5px;
+}
+
+
+/* ==========================================================================
+   Misc
+   ========================================================================== */
+   
+.update-settings{
+	width: 40%;
+	margin: 0 5%;
+	background-color: #eaedf1;
+	border-radius: 25px;
+	border: 2px solid #4582ec;
+	color:#4582ec;
+	padding: 10px;
+	font-size: 20px;
+	font-family: Roboto;
+	font-weight: 400;
+	cursor: pointer;
+	transition: .4s;
+}
+
+.update-settings:hover, .update-settings:focus{
+	
+	background-color: #4582ec;
+	color: #eaedf1;
+}
+
+.reset-settings{
+	text-align: center;
+	display: inline-block;
+	box-sizing: border-box;
+	text-decoration: none;
+	width: 40%;
+	margin: 0 5%;
+	background-color: #eaedf1;
+	border-radius: 25px;
+	border: 2px solid #7e8082;
+	color:#7e8082;
+	padding: 10px;
+	font-size: 20px;
+	font-family: Roboto;
+	font-weight: 400;
+	cursor: pointer;
+	transition: .4s;
+}
+
+.reset-settings:hover, .reset-settings:focus{
+	
+	background-color: #7e8082;
+	color: #eaedf1;
+}
+
+*{
+	outline: none;
+}
+  
+  
+   
+#passwd {
+background-image:url('../../images/icons/password.png');
+background-repeat:no-repeat;
+background-position:13px center;
+background-size: 30px;
+background-color: #33383E;
+outline: none;
+border: 0;
+color: #fff;
+font-size: 18px;
+font-family: Open Sans;
+padding: 10px 15px 10px 55px;
+}
+
+#passwd:focus{
+	
+}
+
+input[type=color] {
+    height: 40px;
+}
+
+
+.input-text {
+	font-family: Open Sans;
+    padding: 10px;
+  border: none;
+  border: solid 1px #c9c9c9;
+  transition: border 0.3s;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing : border-box;
+}
+
+.input-text:focus{
+	border: solid 1px #4582ec;
+}
+
+.input-text.rule{
+	padding: 10px;
+}
+
+.submit{
+	background: #4582ec;
+	border-width: 0;
+	width: 100%;
+	color: #ffffff;
+	display: inline-block;
+	padding: 22px 20px;
+	font: normal 700 25px/1 "Calibri", sans-serif;
+	text-align: center;
+	text-shadow: 0px 0px 0 #000;
+	cursor: pointer;
+}
+
+.submit:hover {
+	background: #1863e6;
+	cursor: pointer;
+}
+
+.submit.disabled{
+	
+	background: #78a1e8;
+	
+}
+
+hr{
+	opacity: 0.2;
+	filter: alpha(opacity=20);
+}
+
+.btn {
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  font-family: Arial;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 15px;
+  border: none;
+  background: #4582ec;
+  padding: 8px 16px 8px 16px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #1863e6;
+  text-decoration: none;
+}
+
+.btnr {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 16px;
+  border: 0;
+  cursor: pointer;
+  background: #229430;
+  padding: 4px 5px 5px 5px;
+  text-decoration: none;
+}
+
+.btnr:hover {
+  background: #146b20;
+  text-decoration: none;
+}
+
+
+textarea {
+    resize: none;
+	font-family: Open Sans;
+    padding: 10px;
+  border: none;
+  border: solid 1px #c9c9c9;
+  transition: border 0.3s;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing : border-box;
+}
+
+textarea:focus{
+	border-bottom: solid 1px #4582ec;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-top: -7px;
+  }
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
